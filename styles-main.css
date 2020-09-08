@@ -58,3 +58,12 @@ main {
   padding: 3px;
   opacity: 0.7;
 }
+@media screen and (max-width: 1028px) {
+  .introduction {
+    flex-direction: column;
+  }
+  .intro-main-title.into-phara {
+    justify-content: center;
+    text-align: center;
+  }
+}

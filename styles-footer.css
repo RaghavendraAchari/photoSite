@@ -68,3 +68,13 @@ footer {
   color: rgba(255, 255, 255, 0.404);
   background: #503755;
 }
+
+@media screen and (max-width: 1028px) {
+  .footer-container {
+    flex-direction: column;
+  }
+  .footer-left {
+    justify-content: center;
+    text-align: center;
+  }
+}
