@@ -6,6 +6,7 @@
 
 body {
   font-family: "Poppins", sans-serif;
+  scroll-behavior: smooth;
 }
 button {
   font-family: "Poppins", sans-serif;
@@ -39,6 +40,8 @@ header {
   padding: 0px 0px 0px 5px;
   font-weight: 700;
   font-size: 20px;
+  text-decoration: none;
+  color: black;
 }
 
 nav {
@@ -71,3 +74,19 @@ nav ul {
 }
 
 /* browsing content */
+@media screen and (max-width: 1028px) {
+  .brand-name {
+    padding: 0px 5px 0px 5px;
+    font-weight: 700;
+    font-size: 17px;
+  }
+  .nav-link.contact-me {
+    display: none;
+  }
+  .nav-link {
+    padding: 0px 5px 0px 5px;
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.747);
+    font-size: 15px;
+  }
+}
