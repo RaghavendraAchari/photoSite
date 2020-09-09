@@ -114,3 +114,20 @@ main {
     animation: slide 0.7s ease forwards;
   }
 }
+
+@media screen and (max-width: 470px) {
+  .intro-main-title {
+    font-weight: 600;
+    font-size: 30px;
+  }
+  .into-phara {
+    font-size: 20px;
+    line-height: 25px;
+  }
+  .introduction-images .sample-image {
+    height: 200px;
+  }
+  main {
+    width: 100%;
+  }
+}

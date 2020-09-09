@@ -90,3 +90,27 @@ nav ul {
     font-size: 15px;
   }
 }
+
+@media screen and (max-width: 470px) {
+  .brand-name {
+    font-weight: 500;
+    font-size: 15px;
+  }
+  header {
+    width: 100%;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  .contact-info {
+    justify-content: center;
+  }
+  .nav-link {
+    padding: 0px 5px 0px 5px;
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.747);
+    font-size: 12px;
+  }
+  .sort-title {
+    font-size: 13px;
+  }
+}

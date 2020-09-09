@@ -19,7 +19,12 @@
   margin-right: 10px;
 }
 .sort-links {
-  margin: 0px 0px 0px 10px;
+  display: flex;
+  justify-content: flex-start;
+  /* align-c: center;
+  text-align: center; */
+  margin: auto;
+  margin-left: 5px;
 }
 .sort-link {
   padding: 5px;
@@ -203,3 +208,9 @@ button:hover {
     grid-template-columns: repeat(1, 1fr);
   }
 }
+/* 
+@media screen and (max-width: 470px) {
+  .sort-links {
+    overflow: scroll;
+  }
+} */
