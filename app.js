@@ -54,8 +54,9 @@ var interval = setInterval(function() {
 function onSubmit(event) {
   alert("Thanks for your comments.");
   event.preventDefault();
-  event.submitter.blur();
-  event.srcElement.reset();
-  // document.getElementById("comment-form").reset();
+  // event.submitter.blur();
+  // event.srcElement.reset();
+  document.getElementById("submit-button").blur();
+  document.getElementById("comment-form").reset();
   // console.log(event);
 }
