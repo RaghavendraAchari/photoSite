@@ -2,7 +2,6 @@
 footer {
   background: #a671b1;
   cursor: default;
-  box-shadow: 0px 0px 10px 0px black;
 }
 .footer-container {
   width: 80%;
@@ -35,7 +34,7 @@ footer {
   /* background: #503755; */
 }
 .social-links ul {
-  justify-content: space-evenly;
+  justify-content: space-between;
 }
 /* .social-links ul li a img:hover {
   content: url("./assets/icons/camera_icon_100.png");
@@ -84,5 +83,8 @@ footer {
   .social-links {
     padding: 30px 0px 30px 0px;
     /* background: #503755; */
+  }
+  .social-links ul {
+    justify-content: space-around;
   }
 }

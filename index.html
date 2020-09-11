@@ -5,10 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
 
-    <link rel="stylesheet" href="./styles.css" />
+    <link rel="stylesheet" href="./styles-common.css" />
+    <link rel="stylesheet" href="./styles-header.css" />
     <link rel="stylesheet" href="./styles-main.css" />
-    <link rel="stylesheet" href="./styles-footer.css" />
     <link rel="stylesheet" href="./styles-browse.css" />
+    <link rel="stylesheet" href="./styles-comment.css" />
+    <link rel="stylesheet" href="./styles-footer.css" />
     <link
       rel="shortcut icon"
       href="./assets/icons/compact-camera-100.png"
@@ -165,6 +167,53 @@
       </div>
     </section>
 
+    <section id="comment">
+      <div class="comment-container">
+        <div class="comment-left-container">
+          <div class="text">
+            <h2 class="comment-title">Leave a comment</h2>
+            <p class="comment-text">
+              Your feedback helps me to improve my ability in every aspects
+            </p>
+          </div>
+        </div>
+        <div class="comment-right-container">
+          <div class="input-container">
+            <form id="comment-form" onsubmit="onSubmit(event);">
+              <div class="input-groups">
+                <!-- <input
+                  type="text"
+                  name="feedback"
+                  id="feedback"
+                  placeholder="Comments here.."
+                > -->
+                <textarea
+                  name="feedback"
+                  id="feedback"
+                  cols="30"
+                  rows="10"
+                  placeholder="Comments here.."
+                ></textarea>
+                <input
+                  type="text"
+                  name="user-name"
+                  id="user-name"
+                  placeholder="Your name.."
+                />
+              </div>
+              <div class="submit-group">
+                <div class="sub-btn-container">
+                  <button class="submit-button">
+                    Submit my feedback
+                  </button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <footer id="contact">
       <div class="footer-container">
         <div class="footer-left">
@@ -194,7 +243,7 @@
               <li class="nav-link">
                 <a
                   target="_blank"
-                  href="https://www.linkedin.com/raghavendraachari/"
+                  href="https://www.linkedin.com/in/raghavendraachari/"
                   title="LinkedIn"
                 >
                   <img

@@ -50,3 +50,12 @@ var interval = setInterval(function() {
 //   interval();
 // });
 // console.log(imageElement);
+
+function onSubmit(event) {
+  alert("Thanks for your comments.");
+  event.preventDefault();
+  event.submitter.blur();
+  event.srcElement.reset();
+  // document.getElementById("comment-form").reset();
+  // console.log(event);
+}
