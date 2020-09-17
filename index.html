@@ -23,303 +23,310 @@
 
     <title>PhotoSite | Raghav's Photo Gallery</title>
   </head>
-  <body>
-    <div class="header-container">
-      <header>
-        <div class="brand-container">
-          <img
-            src="./assets/icons/camera_icon_100.png"
-            alt="PhotoSite Icon"
-            height="50px"
-            id="brand-icon"
-          />
-          <a href="./index.html" class="brand-name">PhotoSite</a>
-        </div>
-        <nav>
-          <ul class="nav-links">
-            <li><a href="#home" class="nav-link">Home</a></li>
-            <li><a href="#browse" class="nav-link">Browse</a></li>
-            <li><a href="#categories" class="nav-link">Categories</a></li>
-          </ul>
-        </nav>
-        <div class="contact-info">
-          <a href="#contact" class="nav-link contact-me">Contact Me</a>
-          <a href="#contact">
+  <body ><div id="app">
+    
+      <div class="header-container">
+        <header>
+          <div class="brand-container">
             <img
-              src="./assets/icons/phone-bubble-64.png"
-              alt="contact me"
-              height="30px"
+              src="./assets/icons/camera_icon_100.png"
+              alt="PhotoSite Icon"
+              height="50px"
+              id="brand-icon"
             />
-          </a>
-        </div>
-      </header>
-    </div>
-
-    <main id="home">
-      <section>
-        <div class="introduction">
-          <div class="introduction-text">
-            <h1 class="intro-main-title">Raghav's Gallery</h1>
-            <p class="into-phara">
-              A passionate photographer interested in capturing the moments of
-              LIFE, NATURE and TIME
-            </p>
+            <a href="./index.html" class="brand-name">PhotoSite</a>
           </div>
-          <div class="introduction-images">
-            <img
-              class="sample-image"
-              src="./assets/images/lamps.jpg"
-              alt="lamps"
-            />
-            <img
-              class="sample-image"
-              src="./assets/images/masur-river-edited.jpeg"
-              alt="masoor"
-            />
-            <img
-              class="sample-image"
-              src="./assets/images/mansoon-edited.jpg"
-              alt="mansoon"
-            />
-            <div class="slides-icons">
+          <nav>
+            <ul class="nav-links">
+              <li><a href="#home" class="nav-link">Home</a></li>
+              <li><a href="#browse" class="nav-link">Browse</a></li>
+              <li><a href="#categories" class="nav-link">Categories</a></li>
+            </ul>
+          </nav>
+          <div class="contact-info">
+            <a href="#contact" class="nav-link contact-me">Contact Me</a>
+            <a href="#contact">
               <img
-                class="slides-icon"
-                src="./assets/icons/circle-filled.svg"
-                alt=""
-                width="20px"
+                src="./assets/icons/phone-bubble-64.png"
+                alt="contact me"
+                height="30px"
+              />
+            </a>
+          </div>
+        </header>
+      </div>
+  
+      <main id="home">
+        <section>
+          <div class="introduction">
+            <div class="introduction-text">
+              <h1 class="intro-main-title">Raghav's Gallery</h1>
+              <p class="into-phara">
+                A passionate photographer interested in capturing the moments of
+                LIFE, NATURE and TIME
+              </p>
+            </div>
+            <div class="introduction-images">
+              <img
+                v-for="image in introImages"
+                class="sample-image"
+                v-bind:src="image.path"
+                v-bind:alt="image.title"
+              />
+              <!-- <img
+                class="sample-image"
+                src="./assets/images/masur-river-edited.jpeg"
+                alt="masoor"
               />
               <img
-                class="slides-icon"
-                src="./assets/icons/circle-outlined.svg"
-                alt=""
-                width="20px"
-              />
+                class="sample-image"
+                src="./assets/images/mansoon-edited.jpg"
+                alt="mansoon"
+              /> -->
+              <div class="slides-icons">
+                <img
+                  class="slides-icon"
+                  src="./assets/icons/circle-filled.svg"
+                  alt=""
+                  width="20px"
+                />
+                <img
+                  class="slides-icon"
+                  src="./assets/icons/circle-outlined.svg"
+                  alt=""
+                  width="20px"
+                />
+                <img
+                  class="slides-icon"
+                  src="./assets/icons/circle-outlined.svg"
+                  alt=""
+                  width="20px"
+                />
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+  
+      <section id="browse">
+        <div class="browse-container" id="app">
+          <div class="filter-container-shadow">
+            <div class="filter-container">
               <img
-                class="slides-icon"
-                src="./assets/icons/circle-outlined.svg"
-                alt=""
-                width="20px"
+                class="filter-image"
+                src="./assets/icons/filter.svg"
+                alt="filter image"
+                width="30px"
               />
+              <p class="sort-title">Sort by :</p>
+              <div class="sort-links">
+                <a href="#" class="sort-link nav-link">Latest First</a>
+                <a href="#" class="sort-link nav-link">Popularity</a>
+                <a href="#" class="sort-link nav-link">Oldest First</a>
+              </div>
+            </div>
+          </div>
+          <div class="shadow"></div>
+          <div class="images-container">
+            <div class="image-photo " v-for="image in images" :key="image.path">
+              <div class="img-pop-card"><button>View</button></div>
+              <img v-bind:src="image.path" v-bind:alt="image.title" class="" />
+            </div>
+            <!-- <div class="image-photo ">
+              <div class="img-pop-card"><button>View</button></div>
+              <img src="./assets/images/bird.jpg" alt="" class="" />
+            </div>
+            <div class="image-photo ">
+              <div class="img-pop-card"><button>View</button></div>
+              <img
+                src="./assets/images/aghanashini-river-edited.jpeg"
+                alt=""
+                class=""
+              />
+            </div>
+            <div class="image-photo ">
+              <div class="img-pop-card"><button>View</button></div>
+              <img src="./assets/images/mansoon-edited.jpg" alt="" class="" />
+            </div>
+            <div class="image-photo ">
+              <div class="img-pop-card"><button>View</button></div>
+              <img
+                src="./assets/images/masur-river-edited.jpeg"
+                alt=""
+                class=""
+              />
+            </div>
+            <div class="image-photo ">
+              <div class="img-pop-card"><button>View</button></div>
+              <img src="./assets/images/rider-edited.jpeg" alt="" class="" />
+            </div>
+            <div class="image-photo ">
+              <div class="img-pop-card"><button>View</button></div>
+              <img src="./assets/images/road-edited.jpg" alt="" class="" />
+            </div>
+          </div> -->
+          <!-- <div class="shadow shadow-bottom"></div> -->
+        </div>
+      </section>
+  
+      <section id="comment">
+        <div class="comment-container">
+          <div class="comment-left-container">
+            <div class="text">
+              <h2 class="comment-title">Leave a comment</h2>
+              <p class="comment-text">
+                Your feedback helps me to improve my ability in every aspects
+              </p>
+            </div>
+          </div>
+          <div class="comment-right-container">
+            <div class="input-container">
+              <form id="comment-form" >
+                <div class="input-groups">
+                  <!-- <input
+                    type="text"
+                    name="feedback"
+                    id="feedback"
+                    placeholder="Comments here.."
+                  > -->
+                  <textarea
+                    name="feedback"
+                    id="feedback"
+                    cols="30"
+                    rows="10"
+                    placeholder="Comments here.."
+                    v-model="comment"
+                  ></textarea>
+                  <input
+                    type="text"
+                    name="user-name"
+                    id="user-name"
+                    placeholder="Your name.."
+                    v-model="userName"
+                  />
+                </div>
+                <div class="submit-group">
+                  <div class="sub-btn-container">
+                    <button type="button" id="submit-button" class="submit-button" @click="commentSubmit($event)">
+                      Submit my feedback
+                    </button>
+                  </div>
+                </div>
+              </form>
             </div>
           </div>
         </div>
       </section>
-    </main>
-
-    <section id="browse">
-      <div class="browse-container">
-        <div class="filter-container-shadow">
-          <div class="filter-container">
-            <img
-              class="filter-image"
-              src="./assets/icons/filter.svg"
-              alt="filter image"
-              width="30px"
-            />
-            <p class="sort-title">Sort by :</p>
-            <div class="sort-links">
-              <a href="#" class="sort-link nav-link">Latest First</a>
-              <a href="#" class="sort-link nav-link">Popularity</a>
-              <a href="#" class="sort-link nav-link">Oldest First</a>
-            </div>
-          </div>
-        </div>
-        <div class="shadow"></div>
-        <div class="images-container">
-          <div class="image-photo ">
-            <div class="img-pop-card"><button>View</button></div>
-            <img src="./assets/images/lamps.jpg" alt="" class="" />
-          </div>
-          <div class="image-photo ">
-            <div class="img-pop-card"><button>View</button></div>
-            <img src="./assets/images/bird.jpg" alt="" class="" />
-          </div>
-          <div class="image-photo ">
-            <div class="img-pop-card"><button>View</button></div>
-            <img
-              src="./assets/images/aghanashini-river-edited.jpeg"
-              alt=""
-              class=""
-            />
-          </div>
-          <div class="image-photo ">
-            <div class="img-pop-card"><button>View</button></div>
-            <img src="./assets/images/mansoon-edited.jpg" alt="" class="" />
-          </div>
-          <div class="image-photo ">
-            <div class="img-pop-card"><button>View</button></div>
-            <img
-              src="./assets/images/masur-river-edited.jpeg"
-              alt=""
-              class=""
-            />
-          </div>
-          <div class="image-photo ">
-            <div class="img-pop-card"><button>View</button></div>
-            <img src="./assets/images/rider-edited.jpeg" alt="" class="" />
-          </div>
-          <div class="image-photo ">
-            <div class="img-pop-card"><button>View</button></div>
-            <img src="./assets/images/road-edited.jpg" alt="" class="" />
-          </div>
-        </div>
-        <!-- <div class="shadow shadow-bottom"></div> -->
-      </div>
-    </section>
-
-    <section id="comment">
-      <div class="comment-container">
-        <div class="comment-left-container">
-          <div class="text">
-            <h2 class="comment-title">Leave a comment</h2>
-            <p class="comment-text">
-              Your feedback helps me to improve my ability in every aspects
+  
+      <footer id="contact">
+        <div class="footer-container">
+          <div class="footer-left">
+            <h3 class="footer-main-text">PhotoSite</h3>
+            <p class="dev-intro">A personal site of Raghavendra Achari</p>
+            <p class="dev-intro">
+              Address : <br />
+              1181, Nehru Nagar, Kumta - 581343
+            </p>
+            <p class="dev-intro">
+              <a class="phone" href="tel:+919731453933">+91 97314 53933</a>
             </p>
           </div>
-        </div>
-        <div class="comment-right-container">
-          <div class="input-container">
-            <form id="comment-form" onsubmit="onSubmit(event);">
-              <div class="input-groups">
-                <!-- <input
-                  type="text"
-                  name="feedback"
-                  id="feedback"
-                  placeholder="Comments here.."
-                > -->
-                <textarea
-                  name="feedback"
-                  id="feedback"
-                  cols="30"
-                  rows="10"
-                  placeholder="Comments here.."
-                ></textarea>
-                <input
-                  type="text"
-                  name="user-name"
-                  id="user-name"
-                  placeholder="Your name.."
-                />
-              </div>
-              <div class="submit-group">
-                <div class="sub-btn-container">
-                  <button id="submit-button" class="submit-button">
-                    Submit my feedback
-                  </button>
-                </div>
-              </div>
-            </form>
+          <div class="footer-right">
+            <nav class="social-links">
+              <ul class="nav-links">
+                <li  class="nav-link">
+                  <a href="mailto:raghav.achari.l@gmail.com" title="Email">
+                    <img
+                      src="./assets/social_media_icons/email.svg"
+                      alt="email"
+                      width="50px"
+                      class="email-icon"
+                    />
+                  </a>
+                </li>
+                <li v-for="socialLink in socialLinks" class="nav-link">
+                  <a
+                    target="_blank"
+                    v-bind:href="socialLink.link"
+                    v-bind:title="socialLink.title"
+                  >
+                    <img
+                      v-bind:src="socialLink.path"
+                      v-bind:alt="socialLink.title"
+                      width="50px"                  
+                      v-bind:class="socialLink.class"
+                    />
+                  </a>
+                </li>
+                <!-- <li class="nav-link">
+                  <a
+                    target="_blank"
+                    href="https://www.github.com/RaghavendraAchari"
+                    title="Phone"
+                  >
+                    <img
+                      class="github-icon"
+                      src="./assets/social_media_icons/github.svg"
+                      alt="github"
+                      width="50px"
+                    />
+                  </a>
+                </li>
+                <li class="nav-link">
+                  <a
+                    target="_blank"
+                    href="https://www.twitter.com/raghav_achari"
+                    title="Twitter"
+                  >
+                    <img
+                      class="twitter-icon"
+                      src="./assets/social_media_icons/twitter.svg"
+                      alt="twitter"
+                      width="50px"
+                    />
+                  </a>
+                </li>
+                <li class="nav-link">
+                  <a
+                    target="_blank"
+                    href="https://www.instagram.com/raghav_achari"
+                    title="Instagram"
+                  >
+                    <img
+                      class="instagram-icon"
+                      src="./assets/social_media_icons/instagram.svg"
+                      alt="instagram"
+                      width="50px"
+                    />
+                  </a>
+                </li>
+                <li class="nav-link">
+                  <a
+                    target="_blank"
+                    href="https://www.facebook.com/raghav.achari.33/"
+                    title="Facebook"
+                  >
+                    <img
+                      class="facebook-icon"
+                      src="./assets/social_media_icons/facebook.svg"
+                      alt="facebook"
+                      width="50px"
+                    />
+                  </a>
+                </li> -->
+              </ul>
+            </nav>
           </div>
         </div>
-      </div>
-    </section>
-
-    <footer id="contact">
-      <div class="footer-container">
-        <div class="footer-left">
-          <h3 class="footer-main-text">PhotoSite</h3>
-          <p class="dev-intro">A personal site of Raghavendra Achari</p>
-          <p class="dev-intro">
-            Address : <br />
-            1181, Nehru Nagar, Kumta - 581343
-          </p>
-          <p class="dev-intro">
-            <a class="phone" href="tel:+919731453933">+91 97314 53933</a>
+        <div class="copyright">
+          <p class="copy-text">
+            developed by Raghavendra Achari - copyright &copy; 2020
           </p>
         </div>
-        <div class="footer-right">
-          <nav class="social-links">
-            <ul class="nav-links">
-              <li class="nav-link">
-                <a href="mailto:raghav.achari.l@gmail.com" title="Email">
-                  <img
-                    src="./assets/social_media_icons/email.svg"
-                    alt="email"
-                    width="50px"
-                    class="email-icon"
-                  />
-                </a>
-              </li>
-              <li class="nav-link">
-                <a
-                  target="_blank"
-                  href="https://www.linkedin.com/in/raghavendraachari/"
-                  title="LinkedIn"
-                >
-                  <img
-                    class="linkedin-icon"
-                    src="./assets/social_media_icons/linkedin.svg"
-                    alt="linkedin"
-                    width="50px"
-                  />
-                </a>
-              </li>
-              <li class="nav-link">
-                <a
-                  target="_blank"
-                  href="https://www.github.com/RaghavendraAchari"
-                  title="Phone"
-                >
-                  <img
-                    class="github-icon"
-                    src="./assets/social_media_icons/github.svg"
-                    alt="github"
-                    width="50px"
-                  />
-                </a>
-              </li>
-              <li class="nav-link">
-                <a
-                  target="_blank"
-                  href="https://www.twitter.com/raghav_achari"
-                  title="Twitter"
-                >
-                  <img
-                    class="twitter-icon"
-                    src="./assets/social_media_icons/twitter.svg"
-                    alt="twitter"
-                    width="50px"
-                  />
-                </a>
-              </li>
-              <li class="nav-link">
-                <a
-                  target="_blank"
-                  href="https://www.instagram.com/raghav_achari"
-                  title="Instagram"
-                >
-                  <img
-                    class="instagram-icon"
-                    src="./assets/social_media_icons/instagram.svg"
-                    alt="instagram"
-                    width="50px"
-                  />
-                </a>
-              </li>
-              <li class="nav-link">
-                <a
-                  target="_blank"
-                  href="https://www.facebook.com/raghav.achari.33/"
-                  title="Facebook"
-                >
-                  <img
-                    class="facebook-icon"
-                    src="./assets/social_media_icons/facebook.svg"
-                    alt="facebook"
-                    width="50px"
-                  />
-                </a>
-              </li>
-            </ul>
-          </nav>
-        </div>
-      </div>
-      <div class="copyright">
-        <p class="copy-text">
-          developed by Raghavendra Achari - copyright &copy; 2020
-        </p>
-      </div>
-    </footer>
-    <script defer src="./app.js"></script>
+      </footer>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+  <script defer src="./vueScript.js"></script>
+  <script defer src="./app.js"></script>
   </body>
 </html>

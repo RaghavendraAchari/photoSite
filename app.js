@@ -42,21 +42,10 @@ var interval = setInterval(function() {
   lastIndex = index;
 }, 3000);
 
-// imageElement[0].addEventListener("mouseover", function() {
-//   clearInterval(interval);
-// });
+// function onSubmit(event) {
+//   alert("Thanks for your comments.");
+//   event.preventDefault();
 
-// imageElement.addEventListener("mouseleave", function() {
-//   interval();
-// });
-// console.log(imageElement);
-
-function onSubmit(event) {
-  alert("Thanks for your comments.");
-  event.preventDefault();
-  // event.submitter.blur();
-  // event.srcElement.reset();
-  document.getElementById("submit-button").blur();
-  document.getElementById("comment-form").reset();
-  // console.log(event);
-}
+//   document.getElementById("submit-button").blur();
+//   document.getElementById("comment-form").reset();
+// }

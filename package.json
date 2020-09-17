@@ -1,0 +1,31 @@
+{
+  "name": "photosite",
+  "version": "1.0.0",
+  "description": "A photography site developed by Raghavendra Achari",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RaghavendraAchari/photoSite.git"
+  },
+  "keywords": [
+    "A",
+    "photography",
+    "site",
+    "developed",
+    "by",
+    "Raghavendra",
+    "Achari"
+  ],
+  "author": "Raghavendra Achari",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/RaghavendraAchari/photoSite/issues"
+  },
+  "homepage": "https://github.com/RaghavendraAchari/photoSite#readme",
+  "dependencies": {
+    "vue": "^2.6.12"
+  }
+}
