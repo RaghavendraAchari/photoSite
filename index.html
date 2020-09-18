@@ -23,8 +23,9 @@
 
     <title>PhotoSite | Raghav's Photo Gallery</title>
   </head>
-  <body ><div id="app">
-    
+  <body>
+    <div id="app">
+      <!-- header -->
       <div class="header-container">
         <header>
           <div class="brand-container">
@@ -55,7 +56,8 @@
           </div>
         </header>
       </div>
-  
+
+      <!-- Main content -->
       <main id="home">
         <section>
           <div class="introduction">
@@ -107,7 +109,8 @@
           </div>
         </section>
       </main>
-  
+
+      <!-- Photos Section -->
       <section id="browse">
         <div class="browse-container" id="app">
           <div class="filter-container-shadow">
@@ -132,43 +135,11 @@
               <div class="img-pop-card"><button>View</button></div>
               <img v-bind:src="image.path" v-bind:alt="image.title" class="" />
             </div>
-            <!-- <div class="image-photo ">
-              <div class="img-pop-card"><button>View</button></div>
-              <img src="./assets/images/bird.jpg" alt="" class="" />
-            </div>
-            <div class="image-photo ">
-              <div class="img-pop-card"><button>View</button></div>
-              <img
-                src="./assets/images/aghanashini-river-edited.jpeg"
-                alt=""
-                class=""
-              />
-            </div>
-            <div class="image-photo ">
-              <div class="img-pop-card"><button>View</button></div>
-              <img src="./assets/images/mansoon-edited.jpg" alt="" class="" />
-            </div>
-            <div class="image-photo ">
-              <div class="img-pop-card"><button>View</button></div>
-              <img
-                src="./assets/images/masur-river-edited.jpeg"
-                alt=""
-                class=""
-              />
-            </div>
-            <div class="image-photo ">
-              <div class="img-pop-card"><button>View</button></div>
-              <img src="./assets/images/rider-edited.jpeg" alt="" class="" />
-            </div>
-            <div class="image-photo ">
-              <div class="img-pop-card"><button>View</button></div>
-              <img src="./assets/images/road-edited.jpg" alt="" class="" />
-            </div>
-          </div> -->
-          <!-- <div class="shadow shadow-bottom"></div> -->
+          </div>
         </div>
       </section>
-  
+
+      <!-- Comment Section -->
       <section id="comment">
         <div class="comment-container">
           <div class="comment-left-container">
@@ -181,7 +152,7 @@
           </div>
           <div class="comment-right-container">
             <div class="input-container">
-              <form id="comment-form" >
+              <form id="comment-form">
                 <div class="input-groups">
                   <!-- <input
                     type="text"
@@ -207,7 +178,12 @@
                 </div>
                 <div class="submit-group">
                   <div class="sub-btn-container">
-                    <button type="button" id="submit-button" class="submit-button" @click="commentSubmit($event)">
+                    <button
+                      type="button"
+                      id="submit-button"
+                      class="submit-button"
+                      @click="commentSubmit($event)"
+                    >
                       Submit my feedback
                     </button>
                   </div>
@@ -217,7 +193,8 @@
           </div>
         </div>
       </section>
-  
+
+      <!-- Footer Section -->
       <footer id="contact">
         <div class="footer-container">
           <div class="footer-left">
@@ -234,7 +211,7 @@
           <div class="footer-right">
             <nav class="social-links">
               <ul class="nav-links">
-                <li  class="nav-link">
+                <li class="nav-link">
                   <a href="mailto:raghav.achari.l@gmail.com" title="Email">
                     <img
                       src="./assets/social_media_icons/email.svg"
@@ -253,7 +230,7 @@
                     <img
                       v-bind:src="socialLink.path"
                       v-bind:alt="socialLink.title"
-                      width="50px"                  
+                      width="50px"
                       v-bind:class="socialLink.class"
                     />
                   </a>
@@ -324,9 +301,10 @@
           </p>
         </div>
       </footer>
-  </div>
-  <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
-  <script defer src="./vueScript.js"></script>
-  <script defer src="./app.js"></script>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script defer src="./vueScript.js"></script>
+    <script defer src="./app.js"></script>
   </body>
 </html>

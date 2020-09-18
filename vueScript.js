@@ -3,6 +3,18 @@ var app = new Vue({
   data: {
     images: [
       {
+        title: "Bird",
+        path: "./assets/images/Bird-edited.jpg"
+      },
+      {
+        title: "Bird 2",
+        path: "./assets/images/Bird-edited-2.jpg"
+      },
+      {
+        title: "Bird 3",
+        path: "./assets/images/Bird-edited-3.jpg"
+      },
+      {
         title: "Lamp",
         path: "./assets/images/lamps.jpg"
       },
@@ -33,8 +45,8 @@ var app = new Vue({
     ],
     introImages: [
       {
-        title: "Lamp",
-        path: "./assets/images/lamps.jpg"
+        title: "Bird",
+        path: "./assets/images/Bird-edited.jpg"
       },
       {
         title: "Maasur",
