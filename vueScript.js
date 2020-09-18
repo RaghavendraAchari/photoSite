@@ -5,52 +5,62 @@ var app = new Vue({
       {
         title: "Bird",
         path: "./assets/images/Bird-edited.jpg",
-        original: "./assets/original-images/Bird-original.JPG"
+        original:
+          "https://drive.google.com/file/d/1yNMEuqGCEf3oaPhhe79nflYsQfpmtvCf/view?usp=sharing"
       },
       {
         title: "Bird 2",
         path: "./assets/images/Bird-edited-2.jpg",
-        original: "./assets/original-images/Bird-original-2.JPG"
+        original:
+          "https://drive.google.com/file/d/1whq9tLIJDaMUUXL6emfuZcXh70ncAOqt/view?usp=sharing"
       },
       {
         title: "Bird 3",
         path: "./assets/images/Bird-edited-3.jpg",
-        original: "./assets/original-images/Bird-original-3.JPG"
+        original:
+          "https://drive.google.com/file/d/1hHe_fhv4RewwEAO682NywxYjpnjcVfzW/view?usp=sharing"
       },
       {
         title: "Lamp",
         path: "./assets/images/lamps.jpg",
-        original: "./assets/original-images/lamps-original.jpg"
+        original:
+          "https://drive.google.com/file/d/1Oa5TJqAQsEUeAOpwGRMYzzidZod7N5pj/view?usp=sharing"
       },
       {
         title: "Bird",
         path: "./assets/images/bird.jpg",
-        original: "./assets/original-images/bird-01-original.jpg"
+        original:
+          "https://drive.google.com/file/d/1CcC26DzGwDjyzm54-56Sv5ShQ_4CIBaG/view?usp=sharing"
       },
       {
         title: "Aghanashini",
         path: "./assets/images/aghanashini-river-edited.jpeg",
-        original: "./assets/original-images/aghanashini-river-original.jpeg"
+        original:
+          "https://drive.google.com/file/d/17l1HysblpA6PsN50hLSkwbdfNPKd83F9/view?usp=sharing"
       },
       {
         title: "Mansoon",
         path: "./assets/images/mansoon-edited.jpg",
-        original: "./assets/original-images/mansoon-original.jpg"
+        original:
+          "https://drive.google.com/file/d/1XJO19yTnN4SVN1LOFic071DeUCvJChUP/view?usp=sharing"
       },
       {
         title: "Masur",
         path: "./assets/images/masur-river-edited.jpeg",
-        original: "./assets/original-images/masur-river-original"
+        original:
+          "https://drive.google.com/file/d/1IJ85puvUbgnAsW6SIhoDNGXuPBp94rSX/view?usp=sharing"
       },
       {
         title: "Rider",
         path: "./assets/images/rider-edited.jpeg",
-        original: "./assets/original-images/rider-original.jpeg"
+        original:
+          "https://drive.google.com/file/d/1OcAh89iNyxmJlBUFVCzVoCCkXholFeVg/view?usp=sharing"
       },
       {
         title: "Road",
         path: "./assets/images/road-edited.jpg",
-        original: "./assets/original-images/road-original.jpg"
+        original:
+          "https://drive.google.com/file/d/1Jjwlq-wkOSPwGntx8L9ggYTtXLX2nOvJ/view?usp=sharing"
       }
     ],
     introImages: [
