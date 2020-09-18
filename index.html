@@ -132,7 +132,11 @@
           <div class="shadow"></div>
           <div class="images-container">
             <div class="image-photo " v-for="image in images" :key="image.path">
-              <div class="img-pop-card"><button>View</button></div>
+              <div class="img-pop-card">
+                <a class="nav-link" v-bind:href="image.original" target="_blank"
+                  ><button>View</button></a
+                >
+              </div>
               <img v-bind:src="image.path" v-bind:alt="image.title" class="" />
             </div>
           </div>
@@ -235,69 +239,14 @@
                     />
                   </a>
                 </li>
-                <!-- <li class="nav-link">
-                  <a
-                    target="_blank"
-                    href="https://www.github.com/RaghavendraAchari"
-                    title="Phone"
-                  >
-                    <img
-                      class="github-icon"
-                      src="./assets/social_media_icons/github.svg"
-                      alt="github"
-                      width="50px"
-                    />
-                  </a>
-                </li>
-                <li class="nav-link">
-                  <a
-                    target="_blank"
-                    href="https://www.twitter.com/raghav_achari"
-                    title="Twitter"
-                  >
-                    <img
-                      class="twitter-icon"
-                      src="./assets/social_media_icons/twitter.svg"
-                      alt="twitter"
-                      width="50px"
-                    />
-                  </a>
-                </li>
-                <li class="nav-link">
-                  <a
-                    target="_blank"
-                    href="https://www.instagram.com/raghav_achari"
-                    title="Instagram"
-                  >
-                    <img
-                      class="instagram-icon"
-                      src="./assets/social_media_icons/instagram.svg"
-                      alt="instagram"
-                      width="50px"
-                    />
-                  </a>
-                </li>
-                <li class="nav-link">
-                  <a
-                    target="_blank"
-                    href="https://www.facebook.com/raghav.achari.33/"
-                    title="Facebook"
-                  >
-                    <img
-                      class="facebook-icon"
-                      src="./assets/social_media_icons/facebook.svg"
-                      alt="facebook"
-                      width="50px"
-                    />
-                  </a>
-                </li> -->
               </ul>
             </nav>
           </div>
         </div>
         <div class="copyright">
           <p class="copy-text">
-            developed by Raghavendra Achari - copyright &copy; 2020
+            <strong>Site is still under development</strong><br />developed by
+            Raghavendra Achari - copyright &copy; 2020
           </p>
         </div>
       </footer>

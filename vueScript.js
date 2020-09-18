@@ -4,43 +4,53 @@ var app = new Vue({
     images: [
       {
         title: "Bird",
-        path: "./assets/images/Bird-edited.jpg"
+        path: "./assets/images/Bird-edited.jpg",
+        original: "./assets/original-images/Bird-original.JPG"
       },
       {
         title: "Bird 2",
-        path: "./assets/images/Bird-edited-2.jpg"
+        path: "./assets/images/Bird-edited-2.jpg",
+        original: "./assets/original-images/Bird-original-2.JPG"
       },
       {
         title: "Bird 3",
-        path: "./assets/images/Bird-edited-3.jpg"
+        path: "./assets/images/Bird-edited-3.jpg",
+        original: "./assets/original-images/Bird-original-3.JPG"
       },
       {
         title: "Lamp",
-        path: "./assets/images/lamps.jpg"
+        path: "./assets/images/lamps.jpg",
+        original: "./assets/original-images/lamps-original.jpg"
       },
       {
         title: "Bird",
-        path: "./assets/images/bird.jpg"
+        path: "./assets/images/bird.jpg",
+        original: "./assets/original-images/bird-01-original.jpg"
       },
       {
         title: "Aghanashini",
-        path: "./assets/images/aghanashini-river-edited.jpeg"
+        path: "./assets/images/aghanashini-river-edited.jpeg",
+        original: "./assets/original-images/aghanashini-river-original.jpeg"
       },
       {
         title: "Mansoon",
-        path: "./assets/images/mansoon-edited.jpg"
+        path: "./assets/images/mansoon-edited.jpg",
+        original: "./assets/original-images/mansoon-original.jpg"
       },
       {
         title: "Masur",
-        path: "./assets/images/masur-river-edited.jpeg"
+        path: "./assets/images/masur-river-edited.jpeg",
+        original: "./assets/original-images/masur-river-original"
       },
       {
         title: "Rider",
-        path: "./assets/images/rider-edited.jpeg"
+        path: "./assets/images/rider-edited.jpeg",
+        original: "./assets/original-images/rider-original.jpeg"
       },
       {
         title: "Road",
-        path: "./assets/images/road-edited.jpg"
+        path: "./assets/images/road-edited.jpg",
+        original: "./assets/original-images/road-original.jpg"
       }
     ],
     introImages: [

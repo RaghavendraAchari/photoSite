@@ -148,6 +148,13 @@
     color: rgb(240, 240, 240);
   }
 }
+.images-container a {
+  height: 100%;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
 .images-container button {
   font-family: "Poppins", sans-serif;
   background: rgba(214, 81, 81, 0.808);
