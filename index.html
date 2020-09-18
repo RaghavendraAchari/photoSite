@@ -133,9 +133,7 @@
           <div class="images-container">
             <div class="image-photo " v-for="image in images" :key="image.path">
               <div class="img-pop-card">
-                <a class="nav-link" v-bind:href="image.original" target="_blank"
-                  ><button>View</button></a
-                >
+                <button><a class="nav-link" v-bind:href="image.original" target="_blank">View</a></button>
               </div>
               <img v-bind:src="image.path" v-bind:alt="image.title" class="" />
             </div>

@@ -149,11 +149,10 @@
   }
 }
 .images-container a {
-  height: 100%;
-  width: 100%;
-  align-items: center;
-  justify-content: center;
-  display: flex;
+  color: rgba(240, 240, 240, 0.603);
+}
+.images-container a:hover {
+  color: rgba(240, 240, 240, 0.603);
 }
 .images-container button {
   font-family: "Poppins", sans-serif;
